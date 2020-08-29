@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* XS */
+
+@media (max-width: 575px) {}
+
+
+/* SM */
+
+@media (max-width: 767px) {
+    #navigation {
+        background: #2B2B2B;
+    }
+    #background-image {
+        background: url('../images/background.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: auto;
+    }
+    #about {
+        background-color: rgba(245, 245, 245, 0.8);
+        padding-top: 0.8rem;
+    }
+    #about h1 {
+        padding-top: 0.8rem;
+    }
+}
+
+
+/* MD */
+
+@media (min-width: 768px) {
+    #background-image {
+        background: url('../images/background.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100vh;
+    }
+    #about {
+        height: 100%;
+        display: grid;
+    }
+    #about section {
+        margin: auto;
+        background-color: rgba(245, 245, 245, 0.8);
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+}
+
+
+/* LG */
+
+@media (min-width: 992px) {}
+
+
+/* XL */
+
+@media (min-width: 1200px) {}
+
+body,
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#navigation {
+    transition: background 0.2s linear;
+    z-index: 10;
+}
+
+.scroll {
+    background: #2B2B2B;
+}
+
+nav p,
+nav a {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: whitesmoke;
+}
+
+nav a:hover {
+    color: steelblue;
+}
+
+nav p span {
+    color: steelblue;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(245,245,245, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#about img {
+    width: inherit;
+    border-radius: 0.8rem;
+}
+
+#about h1 {
+    color: steelblue;
+}
+
+#about p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+}
+
+#background-color {
+    background: #2B2B2B;
+    color: whitesmoke;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+#background-color hr {
+    border-color: whitesmoke;
+}
+
+#background-color h1 {
+    text-align: center;
+}
+
+#background-color p {
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+}
