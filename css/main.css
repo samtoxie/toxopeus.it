@@ -24,7 +24,7 @@
         background-color: rgba(245, 245, 245, 0.8);
         padding-top: 0.8rem;
     }
-    #about h1 {
+    #about h2 {
         padding-top: 0.8rem;
     }
 }
@@ -68,7 +68,8 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
-h1 {
+h2 {
+    font-size: 1.1em;
     font-family: 'Roboto Mono', monospace;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -110,7 +111,7 @@ nav p span {
     border-radius: 0.8rem;
 }
 
-#about h1 {
+#about h2 {
     color: steelblue;
 }
 
@@ -130,7 +131,7 @@ nav p span {
     border-color: whitesmoke;
 }
 
-#background-color h1 {
+#background-color h2 {
     text-align: center;
 }
 
