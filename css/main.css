@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+    font-family: 'Myfonts/fa-brands-400';
+    src: url('fonts/fa-brands-400.eot');
+    /* IE9 Compat Modes */
+    src: url('fonts/fa-brands-400.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/fa-brands-400.woff2') format('woff2'), /* Super Modern Browsers */
+    url('fonts/fa-brands-400.woff') format('woff'), /* Pretty Modern Browsers */
+    url('fonts/fa-brands-400.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('fonts/fa-brands-400.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+}
+
 
 /* XS */
 
@@ -66,6 +78,12 @@
 body,
 html {
     font-family: 'Roboto', sans-serif;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    display: inline-block;
+    width: 100%;
 }
 
 h2 {
@@ -141,4 +159,18 @@ nav p span {
     text-align: justify;
     -moz-text-align-last: center;
     text-align-last: center;
+}
+
+#background-color i {
+    font-size: 2em;
+    color: whitesmoke;
+}
+
+#background-color i:hover {
+    color: lightgrey;
+}
+
+#socials {
+    text-align: center;
+    letter-spacing: 0.5em;
 }
