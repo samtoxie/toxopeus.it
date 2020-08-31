@@ -166,6 +166,14 @@ nav p span {
     color: whitesmoke;
 }
 
+#background-color a {
+    color: #6495ed;
+}
+
+#background-color a:hover {
+    color: steelblue;
+}
+
 #background-color i:hover {
     color: lightgrey;
 }

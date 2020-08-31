@@ -13,7 +13,11 @@ docReady(function() {
     var menu = $("#navigation");
 
     function ChangeNavBg() {
-        window.pageYOffset > 50 ? menu.addClass('scroll') : menu.removeClass('scroll');
+        if (menu.hasClass('scroll') && window.pageYOffset < 50) {
+            menu.removeClass('scroll');
+        } else if (!menu.hasClass('scroll') && window.pageYOffset > 50) {
+            menu.addClass('scroll');
+        }
     }
 
     ChangeNavBg();
