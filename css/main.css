@@ -126,7 +126,7 @@ nav p span {
 
 .timeline-right {
     display: grid;
-    grid-template-columns: 6em 1fr;
+    grid-template-columns: 4em 1fr;
     grid-template-rows: 1fr;
     gap: 1em 1em;
     grid-template-areas: "timeline-img timeline-panel";
@@ -134,7 +134,7 @@ nav p span {
 
 .timeline-left {
     display: grid;
-    grid-template-columns: 6em 1fr;
+    grid-template-columns: 4em 1fr;
     grid-template-rows: 1fr;
     gap: 1em 1em;
     grid-template-areas: "timeline-img timeline-panel";
@@ -154,8 +154,8 @@ nav p span {
     border: 3px solid whitesmoke;
     border-radius: 100%;
     background-color: whitesmoke;
-    width: 6em;
-    height: 6em;
+    width: 4em;
+    height: 4em;
 }
 
 .last-img {
@@ -222,19 +222,17 @@ nav p span {
 
 @media (min-width: 992px) {
     .timeline-right {
-        display: grid;
         grid-template-columns: 1fr 6em 1fr;
-        grid-template-rows: 1fr;
-        gap: 1em 1em;
         grid-template-areas: ". timeline-img timeline-panel";
     }
     .timeline-left {
-        display: grid;
         grid-template-columns: 1fr 6em 1fr;
-        grid-template-rows: 1fr;
-        gap: 1em 1em;
         grid-template-areas: "timeline-panel timeline-img .";
         text-align: right;
+    }
+    .timeline-img img {
+        width: 6em;
+        height: 6em;
     }
 }
 
