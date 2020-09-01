@@ -32,9 +32,9 @@ docReady(function() {
         var $targetEle = $(targetEle);
 
         $('html, body').stop().animate({
-            'scrollTop': ($targetEle.offset().top)
+            'scrollTop': ($targetEle.offset().top - 60)
         }, 400, 'swing', function() {
-            window.location.hash = targetEle;
+            window.location.hash = targetEle - 60;
         });
         $('.navbar-collapse').collapse('hide');
     });
