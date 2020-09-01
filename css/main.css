@@ -12,69 +12,6 @@
     /* Legacy iOS */
 }
 
-
-/* XS */
-
-@media (max-width: 575px) {}
-
-
-/* SM */
-
-@media (max-width: 767px) {
-    #navigation {
-        background: #2B2B2B;
-    }
-    #background-image {
-        background: url('../images/background.jpg') no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        height: auto;
-    }
-    #about {
-        background-color: rgba(245, 245, 245, 0.8);
-        padding-top: 0.8rem;
-    }
-    #about h2 {
-        padding-top: 0.8rem;
-    }
-}
-
-
-/* MD */
-
-@media (min-width: 768px) {
-    #background-image {
-        background: url('../images/background.jpg') no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        height: 100vh;
-    }
-    #about {
-        height: 100%;
-        display: grid;
-    }
-    #about section {
-        margin: auto;
-        background-color: rgba(245, 245, 245, 0.8);
-        padding: 1rem;
-        border-radius: 1rem;
-    }
-}
-
-
-/* LG */
-
-@media (min-width: 992px) {}
-
-
-/* XL */
-
-@media (min-width: 1200px) {}
-
 body,
 html {
     font-family: 'Roboto', sans-serif;
@@ -153,7 +90,9 @@ nav p span {
     text-align: center;
 }
 
-#background-color p {
+#contact p,
+#footer p,
+#socials p {
     font-size: 1.2rem;
     font-family: 'Roboto', sans-serif;
     text-align: justify;
@@ -182,3 +121,124 @@ nav p span {
     text-align: center;
     letter-spacing: 0.5em;
 }
+
+#experience {}
+
+.timeline-right {
+    display: grid;
+    grid-template-columns: 6em 1fr;
+    grid-template-rows: 1fr;
+    gap: 1em 1em;
+    grid-template-areas: "timeline-img timeline-panel";
+}
+
+.timeline-left {
+    display: grid;
+    grid-template-columns: 6em 1fr;
+    grid-template-rows: 1fr;
+    gap: 1em 1em;
+    grid-template-areas: "timeline-img timeline-panel";
+}
+
+.timeline-img {
+    grid-area: timeline-img;
+    background: linear-gradient(whitesmoke, whitesmoke) no-repeat center/2px 100%;
+}
+
+.timeline-panel {
+    grid-area: timeline-panel;
+    padding-bottom: 1em;
+}
+
+.timeline-img img {
+    border: 3px solid whitesmoke;
+    border-radius: 100%;
+    background-color: whitesmoke;
+    width: 6em;
+    height: 6em;
+}
+
+.last-img {
+    background: none;
+}
+
+
+/* Media Queries 
+    XS */
+
+@media (min-width: 575px) {}
+
+
+/* SM */
+
+@media (max-width: 767px) {
+    #navigation {
+        background: #2B2B2B;
+    }
+    #background-image {
+        background: url('../images/background.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: auto;
+        padding-top: 3em;
+    }
+    #about {
+        background-color: rgba(245, 245, 245, 0.8);
+        padding-top: 0.8rem;
+    }
+    #about h2 {
+        padding-top: 0.8rem;
+    }
+}
+
+
+/* MD */
+
+@media (min-width: 768px) {
+    #background-image {
+        background: url('../images/background.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100vh;
+    }
+    #about {
+        height: 100%;
+        display: grid;
+    }
+    #about section {
+        margin: auto;
+        background-color: rgba(245, 245, 245, 0.8);
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+}
+
+
+/* LG */
+
+@media (min-width: 992px) {
+    .timeline-right {
+        display: grid;
+        grid-template-columns: 1fr 6em 1fr;
+        grid-template-rows: 1fr;
+        gap: 1em 1em;
+        grid-template-areas: ". timeline-img timeline-panel";
+    }
+    .timeline-left {
+        display: grid;
+        grid-template-columns: 1fr 6em 1fr;
+        grid-template-rows: 1fr;
+        gap: 1em 1em;
+        grid-template-areas: "timeline-panel timeline-img .";
+        text-align: right;
+    }
+}
+
+
+/* XL */
+
+@media (min-width: 1200px) {}

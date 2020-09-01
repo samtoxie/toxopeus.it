@@ -18,24 +18,24 @@
 
 <body>
     <span id="top"></span>
-    <div id="background-image">
-        <nav class="navbar navbar-expand-md sticky-top" id="navigation">
-            <section class="container">
-                <a class="navbar-brand" href="#top">
-                    <p>Toxopeus<span>.it</span></p>
-                </a>
-                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" href="#about">About <span class="sr-only">(current)</span></a>
-                        <a class="nav-link" href="#experience">Experience</a>
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </div>
+    <nav class="navbar navbar-expand-md fixed-top" id="navigation">
+        <section class="container">
+            <a class="navbar-brand" href="#top">
+                <p>Toxopeus<span>.it</span></p>
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="#about">About <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#experience">Experience</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </div>
-            </section>
-        </nav>
+            </div>
+        </section>
+    </nav>
+    <div id="background-image">
         <div id="about">
             <section class="container">
                 <div class="row">
@@ -64,7 +64,27 @@
         <div class="container">
             <section id="experience">
                 <h2>Experience</h2>
-                <p>This part isn't finished yet, please come back later :)</p>
+                <br />
+                <div class="timeline-left">
+                    <div class="timeline-img"><img src="images/HvA.png"></div>
+                    <div class="timeline-panel">
+                        <span class="timeline-heading">
+                            <h4>Student-Assistent</h4>
+                            <h6>Amsterdam UAS | August 2020 - Present</h6>
+                        </span>
+                        <p>Assisting teaching 1st year courses. Checking students' homework and providing feedback. And answering questions of students.</p>
+                    </div>
+                </div>
+                <div class="timeline-right">
+                    <div class="timeline-img last-img"><img src="images/HvA.png"></div>
+                    <div class="timeline-panel">
+                        <span class="timeline-heading">
+                            <h4>Bachelor of Science</h4>
+                            <h6>Amsterdam UAS | August 2019 - Present</h6>
+                        </span>
+                        <p>Majoring in Software Engineering. Focus on building applications and informationsystems for businesses and enterprises.</p>
+                    </div>
+                </div>
             </section>
             <hr />
             <section id="contact">
