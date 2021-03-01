@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 @font-face {
     font-family: 'Myfonts/fa-brands-400';
     src: url('fonts/fa-brands-400.eot');
     /* IE9 Compat Modes */
-    src: url('fonts/fa-brands-400.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('fonts/fa-brands-400.woff2') format('woff2'), /* Super Modern Browsers */
-    url('fonts/fa-brands-400.woff') format('woff'), /* Pretty Modern Browsers */
-    url('fonts/fa-brands-400.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('fonts/fa-brands-400.svg#svgFontName') format('svg');
+    src: url('fonts/fa-brands-400.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('fonts/fa-brands-400.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('fonts/fa-brands-400.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('fonts/fa-brands-400.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('fonts/fa-brands-400.svg#svgFontName') format('svg');
     /* Legacy iOS */
 }
 
@@ -35,10 +40,6 @@ h2 {
     z-index: 10;
 }
 
-.scroll {
-    background: #2B2B2B;
-}
-
 nav p,
 nav a {
     font-family: 'Roboto Mono', monospace;
@@ -46,7 +47,16 @@ nav a {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 3px;
-    color: whitesmoke;
+    color: #2B2B2B;
+}
+
+.scroll {
+    background: #2B2B2B;
+}
+
+.scroll a,
+.scroll p {
+    color: whitesmoke !important;
 }
 
 nav a:hover {
@@ -175,8 +185,9 @@ nav p span {
     #navigation {
         background: #2B2B2B;
     }
+
     #background-image {
-        background: url('../images/background.jpg') no-repeat center center fixed;
+        background: url('../images/bg.jpg') no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -184,10 +195,12 @@ nav p span {
         height: auto;
         padding-top: 3em;
     }
+
     #about {
         background-color: rgba(245, 245, 245, 0.8);
         padding-top: 0.8rem;
     }
+
     #about h2 {
         padding-top: 0.8rem;
     }
@@ -198,17 +211,19 @@ nav p span {
 
 @media (min-width: 768px) {
     #background-image {
-        background: url('../images/background.jpg') no-repeat center center fixed;
+        background: url('../images/bg.jpg') no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
         height: 100vh;
     }
+
     #about {
         height: 100%;
         display: grid;
     }
+
     #about section {
         margin: auto;
         background-color: rgba(245, 245, 245, 0.8);
@@ -222,14 +237,15 @@ nav p span {
 
 @media (min-width: 992px) {
     .timeline-right {
-        grid-template-columns: 1fr 6em 1fr;
-        grid-template-areas: ". timeline-img timeline-panel";
+        grid-template-columns: 6em 1fr;
+        grid-template-areas: "timeline-img timeline-panel";
     }
+
     .timeline-left {
-        grid-template-columns: 1fr 6em 1fr;
-        grid-template-areas: "timeline-panel timeline-img .";
-        text-align: right;
+        grid-template-columns: 6em 1fr;
+        grid-template-areas: "timeline-img timeline-panel";
     }
+
     .timeline-img img {
         width: 6em;
         height: 6em;
